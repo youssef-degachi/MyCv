@@ -1,0 +1,187 @@
+%-------------------------
+% CV modificado de  Jake's resume
+% Empieza a modificar en la línea 108
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}  % For including images
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% 
+\begin{center}
+    \textbf{\Huge \scshape Youssef Degachi} \\ \vspace{2pt}
+    \textit{Software Engineer} \\ \vspace{3pt}
+    \small +216 50 702 3020 $|$ 
+   \raisebox{-0.2em}{\includegraphics[height=1em]{github.png}} \href{https://github.com/youssef-degachi}{\underline{Youssef Degachi}} $|$ 
+    \raisebox{-0.2em}{\includegraphics[height=1em]{linkedin.png}} \href{https://www.linkedin.com/in/youssef-degachi-06697b31b/}{\underline{Youssef Degachi}} \\ \vspace{5pt}
+    \href{mailto:youssefdegachi@gmail.com}{\underline{youssefdegachi@gmail.com}}
+\end{center}
+
+%-----------Summary-----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \noindent
+      {}{}
+      {I am Youssef Degachi, a dedicated student from Tunisia currently studying at College New. I have a strong work ethic and a passion for learning, and I’m eager to contribute to team success and make a positive impact in my field.}{}
+  \resumeSubHeadingListEnd
+  %
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Higher Institute of Technological Studies of Tozeur/ISETT }{Tunisia, Tozeur}
+      {Bachelor's degree graduate in (july 2025)}{2021 -- 2025}
+  \resumeSubHeadingListEnd
+  %
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {Internship, Web Agency Tozeur (Jan 2023)}{Tunisia, Tozeur}
+      {Developed a medical website that shows ailments in all body parts with an AI chatbot.}{}
+      \resumeItemListStart
+        \resumeItem{Interactive body map for disease discovery} 
+        \resumeItem{Comprehensive database of medical conditions}
+        \resumeItem{AI chatbot for instant health inquiries}
+        \resumeItemListEnd
+      \resumeSubheading
+      {Internship, Web Agency Tozeur (Jan 2024)}{Tunisia, Tozeur}
+      {Developed a responsive eCommerce platform using the MERN stack.}{}
+      \resumeItemListStart
+        \resumeItem{featuring a clean, user-friendly design.}
+        \resumeItem{Dynamic product catalog with a responsive database for real-time updates} 
+        \resumeItem{Optimized for mobile and desktop devices for a seamless shopping experience}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+  %-----------HONORS AND AWARDS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+          
+          \resumeProjectHeading
+          {\textbf{ECommerce website} $|$ \emph{MERN}}{2024}
+        \resumeItemListStart
+            \resumeItem{Build an eCommerce platform with an engaging interface and efficient product management.  }
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{3d t-shirt} $|$ \emph{Three Js}}{2024}
+        \resumeItemListStart
+            \resumeItem{Develop a 3D application where users can modify the logo and color of T-shirts.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+%
+  %-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small{
+        \textbf{Languages:} Java, PHP, JavaScript, TypeScript, Python \\
+        \textbf{Frameworks:} Spring Boot, Angular, React, Next.js, Express.js \\
+        \textbf{Technologies:} Git, Docker, MongoDB
+    }
+\end{itemize}
+
+%-------------------------------------------
+
+
+\end{document}
