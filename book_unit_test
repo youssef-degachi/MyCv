@@ -1,0 +1,191 @@
+\documentclass{book}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{parskip} % For better paragraph spacing
+\usepackage[margin=2.5cm]{geometry} % Adjust margins
+\usepackage{ragged2e} % For centering all text
+
+
+\title{Unit Testing Principles}
+\author{Youssef Degachi}
+\date{\today}
+
+% Customizing chapter and section title colors
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{blue}\centering}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{teal}\centering}{\thesection}{1em}{}
+
+% Prevent widows and orphans
+\widowpenalty10000
+\clubpenalty10000
+\raggedbottom
+
+% Customize listings with no background
+\lstset{
+    basicstyle=\ttfamily,             % Use monospaced font
+    keywordstyle=\color{blue},        % Color for keywords
+    commentstyle=\color{gray},       % Color for comments
+    stringstyle=\color{orange},       % Color for strings
+    showstringspaces=false,           % Don't show spaces in strings
+    breaklines=true,                  % Line breaking
+    frame=single,                     % Frame around the code
+    rulecolor=\color{gray},           % Frame color
+}
+
+% Remove empty pages between chapters
+\let\cleardoublepage\clearpage
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Introduction}
+Unit testing is a method of testing individual components or functions of a program to ensure they work as intended. This document outlines the key principles of unit testing, including practical examples.
+
+\chapter{FIRST Principles}
+
+\section{Fast}
+\textbf{Explanation:} Unit tests should execute quickly to encourage frequent testing during development.\\
+\textbf{Example:}
+\begin{lstlisting}[language=Python]
+def add(a, b):
+    return a + b
+
+def test_add():
+    assert add(2, 3) == 5  # This test is fast!
+\end{lstlisting}
+
+\section{Independent}
+\textbf{Explanation:} Tests should not rely on the results of other tests. Each test should be able to run in isolation.\\
+\textbf{Example:}
+\begin{lstlisting}[language=Python]
+def test_create_user():
+    assert create_user("username") == "User created"
+
+def test_login_user():
+    assert login("username", "password") == "Login successful"
+\end{lstlisting}
+
+\section{Repeatable}
+\textbf{Explanation:} Tests should produce the same results every time they are executed, regardless of when or where they run.\\
+\textbf{Example:}
+\begin{lstlisting}[language=Python]
+def test_fixed_random():
+    assert random_function(seed=1) == 42  # Same seed yields the same result
+\end{lstlisting}
+
+\section{Self-Validating}
+\textbf{Explanation:} Tests should clearly indicate whether they pass or fail without manual intervention.\\
+\textbf{Example:}
+\begin{lstlisting}[language=Python]
+def test_multiply():
+    assert multiply(3, 4) == 12  # This is self-validating
+\end{lstlisting}
+
+\section{Timely}
+\textbf{Explanation:} Tests should be written close to the time of the code they are meant to verify.\\
+\textbf{Example:}
+\begin{lstlisting}[language=Python]
+def new_feature():
+    return "New feature implemented!"
+
+def test_new_feature():
+    assert new_feature() == "New feature implemented!"  # Written immediately after the feature
+\end{lstlisting}
+
+\chapter{SAND Principles}
+
+\section{Simple}
+\textbf{Explanation:} Keep tests straightforward and easy to understand.\\
+\textbf{Example:}
+\begin{lstlisting}[language=Python]
+def test_add_positive_numbers():
+    assert add(1, 2) == 3  # Simple and clear
+\end{lstlisting}
+
+\section{Automated}
+\textbf{Explanation:} Tests should be automated to run without manual input.\\
+\textbf{Example:}
+\begin{lstlisting}[language=sh]
+# Command to run all tests in a test suite
+pytest
+\end{lstlisting}
+
+\section{Necessary}
+\textbf{Explanation:} Only write tests that provide value to avoid unnecessary complexity.\\
+\textbf{Example:}
+\begin{lstlisting}[language=Python]
+# Skip testing trivial methods like this
+def get_name():
+    return "Test"
+\end{lstlisting}
+
+\section{Deterministic}
+\textbf{Explanation:} Tests should consistently return the same result.\\
+\textbf{Example:}
+\begin{lstlisting}[language=Python]
+def test_fixed_value():
+    assert get_fixed_value() == 10  # Should always return 10
+\end{lstlisting}
+
+\chapter{RED-GREEN-REFACTOR}
+
+\section{Red}
+\textbf{Explanation:} Write a test for functionality that doesn’t exist yet. The test should fail.\\
+\textbf{Example:}
+\begin{lstlisting}[language=Python]
+def test_subtract():
+    assert subtract(5, 3) == 2  # Fails because subtract is not implemented
+\end{lstlisting}
+
+\section{Green}
+\textbf{Explanation:} Write just enough code to make the test pass.\\
+\textbf{Example:}
+\begin{lstlisting}[language=Python]
+def subtract(a, b):
+    return a - b  # Now the test passes
+\end{lstlisting}
+
+\section{Refactor}
+\textbf{Explanation:} Clean up your code while ensuring tests still pass.\\
+\textbf{Example:}
+\begin{lstlisting}[language=Python]
+def subtract(a, b):
+    return a - b  # Refactored for clarity, tests still pass
+\end{lstlisting}
+
+\chapter{Test-Driven Development (TDD)}
+
+\textbf{Explanation:} Write tests before the actual code. This drives the design of your code.\\
+\begin{enumerate}
+    \item Write a test for a new feature.
+    \item Implement just enough code to pass the test.
+    \item Refactor as needed, ensuring all tests still pass.
+\end{enumerate}
+
+\begin{lstlisting}[language=Python]
+# Step 1: Write a failing test
+def test_divide():
+    assert divide(10, 2) == 5  # Fails initially
+
+# Step 2: Implement the function
+def divide(a, b):
+    return a / b  # Now the test passes
+
+# Step 3: Refactor if necessary
+\end{lstlisting}
+
+\chapter{Conclusion}
+Adhering to these principles helps ensure that unit tests are effective, maintainable, and useful in ensuring code quality.
+
+\end{document}

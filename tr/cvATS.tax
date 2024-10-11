@@ -1,0 +1,198 @@
+%-------------------------
+% CV modificado de  Jake's resume
+% Empieza a modificar en la línea 108
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}  % For including images
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-9pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-9}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% 
+\begin{center}
+    \textbf{\Huge \scshape Youssef Degachi} \\ \vspace{2pt}
+    \textit{Software Developer} \\ \vspace{3pt}
+    Tunis, Ibn Sina — \href{mailto:youssefdegachi@gmail.com}{\underline{youssefdegachi@gmail.com}} — +216 50 702 3020 \\ \vspace{5pt}
+    \raisebox{-0.2em}{\includegraphics[height=1em]{github.png}} \href{https://github.com/youssef-degachi}{\underline{Youssef Degachi}} $|$ 
+    \raisebox{-0.2em}{\includegraphics[height=1em]{linkedin.png}} \href{https://www.linkedin.com/in/youssef-degachi-06697b31b/}{\underline{Youssef Degachi}}
+\end{center}
+
+%-----------Summary-----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \noindent
+    
+      {Enthusiastic software developer skilled in React, Node.js, and MongoDB with experience in building
+scalable web applications. Proven ability to design user-friendly interfaces and optimize backend systems
+for performance. Seeking opportunities to contribute innovative solutions in a dynamic team environment.}{}
+  \resumeSubHeadingListEnd
+  %
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Higher Institute of Technological Studies of Tozeur/ISETTozeur}{Tunisia, Tozeur}
+      {Bachelor's degree graduate in july 2025}{2022 -- 2025}
+    \resumeSubheading
+      {Course}{}
+      {Web Development,  Data Structures and Algorithms, Communication Studies}{}
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+      {Internship, Web Agency Tozeur (Jan - Feb 2024)}{Tunisia, Tozeur}
+      {Create a responsive eCommerce platform using the MERN stack.}{}
+      \resumeItemListStart
+        \resumeItem{Planned the website architecture, creating UML diagrams that improved development efficiency by 30\%.}
+        \resumeItem{esigned user interfaces with Figma, leading to a 40\% reduction in user onboarding time} 
+        \resumeItem{Developed a responsive platform that increased user engagement by 30\%.}
+        \resumeItem{Optimized backend architecture, reducing server response time by 20\%.}
+        \resumeItem{Technologies: React, JavaScript, Node.js, Express, MongoDB, NoSQL, Clean Code, Scrum, Figma, Git.}
+        \resumeItemListEnd
+        \resumeSubheading
+      {Internship, Web Agency Tozeur (Jan - Feb 2023)}{Tunisia, Tozeur}
+      {Developed a medical website that shows ailments in all body parts with an AI chatbot.}{}
+      \resumeItemListStart
+        \resumeItem{Created a human body illustration using Adobe Illustrator.} 
+        \resumeItem{Manage a database to store information for each part of the human body.}
+        \resumeItem{ improving data retrieval speed by 40\%.}
+        \resumeItem{Implemented APIs to create a medical chatbot,}
+        \resumeItem{Technologies: JavaScript, HTML, CSS, PHP, MySQL, Adobe Illustrator, Scrum, Git.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+  %-----------HONORS AND AWARDS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+          {\textbf{ECommerce website} $|$ \emph{MERN}}{2024}
+        \resumeItemListStart
+            \resumeItem{Built an eCommerce platform that reduced product management time by 25\%.}
+            \resumeItem{Enhanced website speed, reducing load time by 50\%, leading to a 20\% increase in user retention.}
+            \resumeItem{Improved site performance, achieving a 95\% score on Google PageSpeed Insights.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{3D t-shirt} $|$ \emph{Three Js}}{2024}
+        \resumeItemListStart
+            \resumeItem{Develop a 3D application where users can modify the logo and color of T-shirts.}
+            \resumeItem{Implemented real-time rendering, reducing user feedback time by 70\%}
+            \resumeItem{Enabled users to customize T-shirt colors and download designs as JPEG.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+  %-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small{
+        \textbf{Languages:} Arabic(native), English(medium), French(medium). \\
+        \textbf{Programming Languages:} Java, PHP, JavaScript, TypeScript. \\
+        \textbf{Frameworks:} Spring Boot, Angular, React, Next.js, Express.js.\\
+        \textbf{Technologies:} Git, Docker, MongoDB. \\
+        \textbf{Hobbies:}Enjoy running and biking, Reading books. \\
+        \textbf{Clubs:} Member of the Robot Club at ISET Tozeur. \\
+        
+    }
+\end{itemize}
+
+%-------------------------------------------
+
+
+\end{document}
