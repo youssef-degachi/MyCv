@@ -54,8 +54,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-9pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-9}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -64,30 +64,30 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-5pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-9pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-9pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-9pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -109,77 +109,89 @@
 % 
 \begin{center}
     \textbf{\Huge \scshape Youssef Degachi} \\ \vspace{2pt}
-    \textit{Software Engineer} \\ \vspace{3pt}
-    \small +216 50 702 3020 $|$ 
-   \raisebox{-0.2em}{\includegraphics[height=1em]{github.png}} \href{https://github.com/youssef-degachi}{\underline{Youssef Degachi}} $|$ 
-    \raisebox{-0.2em}{\includegraphics[height=1em]{linkedin.png}} \href{https://www.linkedin.com/in/youssef-degachi-06697b31b/}{\underline{Youssef Degachi}} \\ \vspace{5pt}
-    \href{mailto:youssefdegachi@gmail.com}{\underline{youssefdegachi@gmail.com}}
+    \textit{Software Developer - Student} \\ \vspace{3pt}
+    Tunis, Ibn Sina — \href{mailto:youssefdegachi@gmail.com}{\underline{youssefdegachi0@gmail.com}} — +216 50 702 3020 \\ \vspace{5pt}
+    \raisebox{-0.2em}{\includegraphics[height=1em]{github.png}} \href{https://github.com/youssef-degachi}{\underline{Youssef Degachi}} $|$ 
+    \raisebox{-0.2em}{\includegraphics[height=1em]{linkedin.png}} \href{https://www.linkedin.com/in/youssef-degachi-06697b31b/}{\underline{Youssef Degachi}}
 \end{center}
 
 %-----------Summary-----------
 \section{Summary}
   \resumeSubHeadingListStart
     \noindent
-      {}{}
-      {I am Youssef Degachi, a dedicated student from Tunisia currently studying at College New. I have a strong work ethic and a passion for learning, and I’m eager to contribute to team success and make a positive impact in my field.}{}
+    
+      {I'm a motivated software development student eager to learn new technology. I enjoy creating high-performance apps using clean code, unit testing, and ensuring they are user-friendly.}{}
   \resumeSubHeadingListEnd
   %
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Higher Institute of Technological Studies of Tozeur/ISETT }{Tunisia, Tozeur}
-      {Bachelor's degree graduate in (july 2025)}{2021 -- 2025}
+      {Higher Institute of Technological Studies of Tozeur/ISETTozeur}{Tunisia, Tozeur}
+      {Bachelor's degree graduate in july 2025}{2022 -- 2025}
+    \resumeSubheading
+      {Course}{}
+      {Web Development,  Data Structures and Algorithms, Communication Studies}{}
   \resumeSubHeadingListEnd
-  %
 %-----------EXPERIENCE-----------
 
 \section{Experience}
     \resumeSubHeadingListStart
-    \resumeSubheading
-      {Internship, Web Agency Tozeur (Jan 2023)}{Tunisia, Tozeur}
-      {Developed a medical website that shows ailments in all body parts with an AI chatbot.}{}
-      \resumeItemListStart
-        \resumeItem{Interactive body map for disease discovery} 
-        \resumeItem{Comprehensive database of medical conditions}
-        \resumeItem{AI chatbot for instant health inquiries}
-        \resumeItemListEnd
       \resumeSubheading
-      {Internship, Web Agency Tozeur (Jan 2024)}{Tunisia, Tozeur}
+      {Internship, Web Agency Tozeur (Jan - Feb 2024)}{Tunisia, Tozeur}
       {Developed a responsive eCommerce platform using the MERN stack.}{}
       \resumeItemListStart
-        \resumeItem{featuring a clean, user-friendly design.}
-        \resumeItem{Dynamic product catalog with a responsive database for real-time updates} 
-        \resumeItem{Optimized for mobile and desktop devices for a seamless shopping experience}
-        \resumeItemListEnd
-\resumeSubHeadingListEnd
+        \resumeItem{Designed the application system with UML and created the UI using Figma to optimize user experience.}
+        \resumeItem{Built a responsive platform that significantly improved user engagement.}
+        \resumeItem{Optimized backend architecture to ensure faster server response times.}
+        \resumeItem{\textbf{Technologies}: React, JavaScript, Node.js, Express, MongoDB, NoSQL, Clean Code, Scrum, Figma, Git.}
+
+      \resumeItemListEnd
+      \resumeSubheading
+      {Internship, Web Agency Tozeur (Jan - Feb 2023)}{Tunisia, Tozeur}
+      {Developed a medical website showcasing ailments in various body parts with an AI chatbot.}{}
+      \resumeItemListStart
+        \resumeItem{Created a detailed human body illustration using Adobe Illustrator.}
+        \resumeItem{Managed a database to store information for each body part, ensuring efficient data retrieval.}
+        \resumeItem{Implemented APIs to integrate an AI-powered medical chatbot.}
+        \resumeItem{\textbf{Technologies}: JavaScript, HTML, CSS, PHP, MySQL, Adobe Illustrator, Scrum, Git.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
   %-----------HONORS AND AWARDS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-          
           \resumeProjectHeading
-          {\textbf{ECommerce website} $|$ \emph{MERN}}{2024}
+          {\textbf{ECommerce Website} $|$ \emph{MERN}}{2024}
         \resumeItemListStart
-            \resumeItem{Build an eCommerce platform with an engaging interface and efficient product management.  }
+            \resumeItem{Developed an eCommerce platform that streamlined product management.}
+            \resumeItem{Optimized website performance, improving load times and enhancing user retention.}
+            \resumeItem{Enhanced site performance, achieving a high score on Google PageSpeed Insights.}
+            \resumeItem{\textbf{Technologies}: React, JavaScript, Node.js, Express, MongoDB, NoSQL, Clean Code, Scrum, Figma, Git.}
           \resumeItemListEnd
-
         \resumeProjectHeading
-          {\textbf{3d t-shirt} $|$ \emph{Three Js}}{2024}
+          {\textbf{3D T-shirt Customizer} $|$ \emph{Three.js}}{2024}
         \resumeItemListStart
-            \resumeItem{Develop a 3D application where users can modify the logo and color of T-shirts.}
+            \resumeItem{Built a 3D application allowing users to modify T-shirt logos and colors.}
+            \resumeItem{Implemented real-time rendering for faster user feedback.}
+            \resumeItem{Enabled users to download customized T-shirt designs as JPEG files.}
+            \resumeItem{\textbf{Technologies}: Three.js, React, JavaScript, HTML, CSS, Git.}
           \resumeItemListEnd
-          
     \resumeSubHeadingListEnd
-%
-  %-----------SKILLS-----------
+
+%-----------SKILLS-----------
 \section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \item \small{
-        \textbf{Languages:} Java, PHP, JavaScript, TypeScript, Python \\
-        \textbf{Frameworks:} Spring Boot, Angular, React, Next.js, Express.js \\
-        \textbf{Technologies:} Git, Docker, MongoDB
-    }
-\end{itemize}
+\begin{document}
+
+\begin{tabular}{l | l}
+\hspace{3mm} \textbf{Programming Languages:}                                 & \hspace{3mm} \textbf{Languages:} \\
+\hspace{3mm} Java, PHP, JavaScript, TypeScript, Python                       & \hspace{3mm} Arabic (native),English (intermediate), French (basic) \\
+\hspace{3mm} \textbf{Frameworks:}                                            & \hspace{3mm} \textbf{Hobbies:} \\
+\hspace{3mm} Spring Boot, Angular, React, Next.js, Express.js \hspace{3mm}   & \hspace{3mm} Enjoy running and biking  Reading books \\
+\hspace{3mm} \textbf{Technologies:}                                          & \hspace{3mm} \textbf{Clubs:} \\
+\hspace{3mm} Git, Docker, MongoDB, Unit Test, CI/CD                          & \hspace{3mm} Member of the Robot Club at ISET Tozeur \\
+\end{tabular}
+\end{document}
 
 %-------------------------------------------
 
