@@ -109,8 +109,8 @@
 % 
 \begin{center}
     \textbf{\Huge \scshape Youssef Degachi} \\ \vspace{2pt}
-    \textit{Software Developer} \\ \vspace{3pt}
-    Tunis, Ibn Sina — \href{mailto:youssefdegachi@gmail.com}{\underline{youssefdegachi@gmail.com}} — +216 50 702 3020 \\ \vspace{5pt}
+    \textit{Software Developer - Student} \\ \vspace{3pt}
+    Tunis, Ibn Sina — \href{mailto:youssefdegachi@gmail.com}{\underline{youssefdegachi0@gmail.com}} — +216 50 702 3020 \\ \vspace{5pt}
     \raisebox{-0.2em}{\includegraphics[height=1em]{github.png}} \href{https://github.com/youssef-degachi}{\underline{Youssef Degachi}} $|$ 
     \raisebox{-0.2em}{\includegraphics[height=1em]{linkedin.png}} \href{https://www.linkedin.com/in/youssef-degachi-06697b31b/}{\underline{Youssef Degachi}}
 \end{center}
@@ -120,9 +120,7 @@
   \resumeSubHeadingListStart
     \noindent
     
-      {Enthusiastic software developer skilled in React, Node.js, and MongoDB with experience in building
-scalable web applications. Proven ability to design user-friendly interfaces and optimize backend systems
-for performance. Seeking opportunities to contribute innovative solutions in a dynamic team environment.}{}
+      {I'm a motivated software development student eager to learn new technology. I enjoy creating high-performance apps using clean code, unit testing, and ensuring they are user-friendly.}{}
   \resumeSubHeadingListEnd
   %
 %-----------EDUCATION-----------
@@ -143,10 +141,11 @@ for performance. Seeking opportunities to contribute innovative solutions in a d
       {Internship, Web Agency Tozeur (Jan - Feb 2024)}{Tunisia, Tozeur}
       {Developed a responsive eCommerce platform using the MERN stack.}{}
       \resumeItemListStart
-        \resumeItem{Architected the system with UML and designed the UI using Figma to optimize user experience.}
+        \resumeItem{Designed the application system with UML and created the UI using Figma to optimize user experience.}
         \resumeItem{Built a responsive platform that significantly improved user engagement.}
         \resumeItem{Optimized backend architecture to ensure faster server response times.}
         \resumeItem{\textbf{Technologies}: React, JavaScript, Node.js, Express, MongoDB, NoSQL, Clean Code, Scrum, Figma, Git.}
+
       \resumeItemListEnd
       \resumeSubheading
       {Internship, Web Agency Tozeur (Jan - Feb 2023)}{Tunisia, Tozeur}
@@ -185,12 +184,12 @@ for performance. Seeking opportunities to contribute innovative solutions in a d
 \begin{document}
 
 \begin{tabular}{l | l}
-\textbf{Programming Languages:}                                     & \hspace{5mm} \textbf{Languages:} \\
-Java, PHP, JavaScript, TypeScript, Python                           & \hspace{5mm} Arabic (native), English (medium), French (medium) \\
-\textbf{Frameworks:}                                                & \hspace{5mm} \textbf{Hobbies:} \\
-Spring Boot, Angular, React, Next.js, Express.js  \hspace{5mm}      & \hspace{5mm} Enjoy running and biking  Reading books \\
-\textbf{Technologies:}                                              & \hspace{5mm} \textbf{Clubs:} \\
-Git, Docker, MongoDB                                                & \hspace{5mm} Member of the Robot Club at ISET Tozeur \\
+\hspace{3mm} \textbf{Programming Languages:}                                 & \hspace{3mm} \textbf{Languages:} \\
+\hspace{3mm} Java, PHP, JavaScript, TypeScript, Python                       & \hspace{3mm} Arabic (native),English (intermediate), French (basic) \\
+\hspace{3mm} \textbf{Frameworks:}                                            & \hspace{3mm} \textbf{Hobbies:} \\
+\hspace{3mm} Spring Boot, Angular, React, Next.js, Express.js \hspace{3mm}   & \hspace{3mm} Enjoy running and biking  Reading books \\
+\hspace{3mm} \textbf{Technologies:}                                          & \hspace{3mm} \textbf{Clubs:} \\
+\hspace{3mm} Git, Docker, MongoDB, Unit Test, CI/CD                          & \hspace{3mm} Member of the Robot Club at ISET Tozeur \\
 \end{tabular}
 \end{document}
 
